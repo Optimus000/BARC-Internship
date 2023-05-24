@@ -1,2 +1,2 @@
-# BARC-Internship
-BARC Technical Internship
+# Internship
+Technical Internship
