@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vulnerability Details</title>
+</head>
+
+<body>
+    <h1>Vulnerability Details</h1>
+    {% if vulnerabilities %}
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Base Score</th>
+                <th>Base Severity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vulnerability in vulnerabilities %}
+            <tr>
+                <td>{{ vulnerability.description }}</td>
+                <td>{{ vulnerability.base_score }}</td>
+                <td>{{ vulnerability.base_severity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No vulnerabilities found.</p>
+    {% endif %}
+</body>
+
+</html>
