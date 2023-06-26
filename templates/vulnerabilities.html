@@ -1,18 +1,20 @@
+<!-- vulnerabilities.html -->
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Vulnerability Details</title>
+    <title>Search Results for {{keyword}}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-    <h1>Vulnerability Details</h1>
+    <h1>Search Results for {{keyword}}</h1>
     {% if vulnerabilities %}
     <table>
         <thead>
             <tr>
                 <th>Description</th>
+                <th>CVE_ID</th>
                 <th>Base Score</th>
                 <th>Base Severity</th>
             </tr>
@@ -21,6 +23,7 @@
             {% for vulnerability in vulnerabilities %}
             <tr>
                 <td>{{ vulnerability.description }}</td>
+                <td>{{ vulnerability.cve_id }}</td>
                 <td>{{ vulnerability.base_score }}</td>
                 <td>{{ vulnerability.base_severity }}</td>
             </tr>
