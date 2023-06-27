@@ -11,7 +11,7 @@ app = Flask(__name__)
 def vulnerabilities():
 
     # Download the JSON file
-    with open('nvdcve-1.1-2023.json', 'r', encoding='utf-8') as file:
+    with open('data/nvdcve-1.1-2023.json', 'r', encoding='utf-8') as file:
         json_data = json.load(file)
 
     # Read the list of installed apps

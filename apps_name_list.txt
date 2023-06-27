@@ -7,7 +7,7 @@ R for Windows 4.1.0
 Riot Vanguard
 WinRAR 6.01 (64-bit)
 Java 8 Update 361 (64-bit)
-Malwarebytes version 4.5.28.266
+Malwarebytes version 4.5.30.269
 Microsoft Update Health Tools
 Java(TM) SE Development Kit 17.0.5 (64-bit)
 Node.js
